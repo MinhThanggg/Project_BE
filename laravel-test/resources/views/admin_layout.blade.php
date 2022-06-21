@@ -105,8 +105,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <span>Danh mục</span>
                             </a>
                             <ul class="sub">
-                                <li><a href="all_category_product">hiển thị danh mục</a></li>
-                                <li><a href="add_category_product">thêm danh mục</a></li>
+                                <li><a href="all_category_product">Hiển Thị Danh Mục</a></li>
+                                <li><a href="add_category_product">Thêm Danh Mục</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-book"></i>
+                                <span>Sản Phẩm</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="all_product">Hiển Thị Sản Phẩm</a></li>
+                                <li><a href="add_product">Thêm Sản Phẩm</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -129,7 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- footer -->
             <div class="footer">
                 <div class="wthree-copyright">
-                    <p>© 2017 Visitors. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+                    <p>© 2022 Visitors. All rights reserved | Design by Nhom C </a></p>
                 </div>
             </div>
             <!-- / footer -->

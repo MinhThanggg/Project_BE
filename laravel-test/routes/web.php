@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
@@ -63,3 +64,13 @@ Route::get('/delete-category-product/{category_product_id}', [CategoryController
 
 Route::post('/save-category-product', [CategoryController::class, 'save_category_product']);
 Route::post('/update-category-product/{category_product_id}', [CategoryController::class, 'update_category_product']);
+
+//Product
+Route::get('/add_product', [ProductController::class, 'add_product']);
+Route::get('/all_product', [ProductController::class, 'all_product']);
+Route::get('/edit-product/{product_id}', [ProductController::class, 'edit_product']);
+Route::get('/delete-product/{product_id}', [ProductController::class, 'delete_product']);
+
+Route::post('/save-product', [ProductController::class, 'save_product']);
+Route::post('/update-product/{product_id}', [ProductController::class, 'update_product']);
+

@@ -18,12 +18,12 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Tên Danh Mục</label>
                                     <input name="category_product_name" type="text" class="form-control"
-                                        id="exampleInputEmail1" placeholder="tên danh mục">
+                                        id="exampleInputEmail1">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Mô tả danh mục</label>
                                     <textarea style="resize: none" rows="5" type="text" name="category_product_desc" class="form-control"
-                                        id="exampleInputPassword1" placeholder="Mô tả danh mục"></textarea>
+                                        id="exampleInputPassword1"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">hiển thị</label>
