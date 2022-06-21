@@ -58,4 +58,8 @@ Route::get('custom-login', [CustomAuthController::class, 'customLogin'])->name('
 //Category
 Route::get('/add_category_product', [CategoryController::class, 'add_category_product']);
 Route::get('/all_category_product', [CategoryController::class, 'all_category_product']);
+Route::get('/edit-category-product/{category_product_id}', [CategoryController::class, 'edit_category_product']);
+Route::get('/delete-category-product/{category_product_id}', [CategoryController::class, 'delete_category_product']);
+
 Route::post('/save-category-product', [CategoryController::class, 'save_category_product']);
+Route::post('/update-category-product/{category_product_id}', [CategoryController::class, 'update_category_product']);
