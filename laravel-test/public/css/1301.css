@@ -1,0 +1,140 @@
+.container.container-1301{
+  padding-top: 0px !important;
+}
+hr{
+  background-color: #9e9494 !important;
+}
+.bg-light {
+  background-color: #fff !important;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+  height: 90px;
+  background-color: #fff !important;
+}
+.nav.collapse.navbar-collapse{
+  background-color: #fff;
+}
+.icon-nav {
+  text-align: center;
+  float: left;
+}
+
+.icon-nav .icon-account {
+  margin-right: 10px;
+  display: inline;
+}
+
+.icon-nav .icon-search {
+  margin-right: 10px;
+  display: inline;
+}
+
+.icon-nav .icon-cart {
+  display: inline;
+}
+
+.icon-nav .icon-cart a {
+  color: #000;
+}
+
+.icon-nav .icon-wishlist {
+  margin-right: 10px;
+  display: inline;
+}
+
+.logo {
+  margin-right: 36%;
+}
+
+.nav-link {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  outline: none;
+  transition: .5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.nav-link.dropdown-toggle li a {
+  text-transform: uppercase;
+}
+
+.nav-link.dropdown-toggle li:hover > a {
+  color: #ff6f61;
+}
+
+.total {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 5px;
+  top: 27px;
+  background: #ff6f61;
+  border-radius: 50%;
+  text-align: center;
+  color: #e5e5e5;
+  line-height: 17px;
+}
+
+.li-menu {
+  position: relative;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.li-menu:hover .itm {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+}
+
+a.nav-link.dropdown-toggle::after {
+  content: none;
+}
+
+a.dropdown-toggle::after {
+  content: none;
+}
+
+.a-first {
+  margin-top: 10px;
+  padding: 0 7px;
+  color: #323232;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.li-menu:hover .a-first {
+  color: #ff6f61;
+}
+
+.li-menu .a-first {
+  position: relative;
+  text-decoration: none;
+}
+
+.li-menu .a-first::before {
+  content: '';
+  transition: 1s;
+  height: 1px;
+  width: 0px;
+  background: #ff6f61;
+  position: absolute;
+  bottom: 0;
+}
+
+.li-menu .a-first:hover::before {
+  width: 84%;
+}
+
+.itm a:hover {
+  color: #ff6f61;
+}
+

@@ -1,0 +1,104 @@
+.container-1510{
+  padding-top: 0px !important;
+  margin-bottom: 40px;
+}
+
+.content {
+  margin-top: 80px;
+  display: inline-flex;
+  padding-left: 33px;
+}
+
+.content .category {
+  display: inline;
+}
+
+.content .category a {
+  position: relative;
+}
+
+.content .category a:hover {
+  color: #ff6f61;
+}
+
+.content .category a::before {
+  content: '';
+  transition: 1s;
+  height: 1px;
+  width: 0px;
+  background: #ff6f61;
+  position: absolute;
+  bottom: 0;
+}
+
+.content .category a:hover::before {
+  width: 80%;
+}
+
+.content .category > a:first-child {
+  color: #ff6f61;
+  position: relative;
+}
+
+.content .category > a:first-child::before {
+  content: '';
+  height: 1px;
+  width: 50%;
+  background: #ff6f61;
+  position: absolute;
+  bottom: 0;
+}
+
+.content .category a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #111111;
+  font-weight: 600;
+}
+
+.content .catalog-toolbar {
+  display: inline;
+  position: relative;
+  padding-left: 396px;
+}
+
+.content .catalog-toolbar .fiter {
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: #111111;
+}
+
+.content .catalog-toolbar p {
+  float: left;
+  color: #111111;
+}
+
+.content .catalog-toolbar .dropdown-right {
+  margin-left: 15px;
+  width: 200px;
+  float: left;
+  background: none;
+  position: relative;
+}
+
+.content .catalog-toolbar .dropdown-right:hover .list-item {
+  display: block;
+}
+
+.content .catalog-toolbar .dropdown-right .list-item {
+  display: none;
+  position: absolute;
+  min-width: 158px;
+  z-index: 1;
+}
+
+.content .catalog-toolbar .dropdown-right .list-item option:hover {
+  background: #8aaef1;
+  color: #fff;
+}
+
+.content .catalog-toolbar .dropdown-right .btn-dropdown {
+  border: 1px solid #cccccc;
+  width: 200px;
+}

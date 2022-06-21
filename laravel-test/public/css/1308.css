@@ -1,0 +1,63 @@
+.container.container-1308{
+  padding-top: 80px !important;
+}
+
+.container .card-deck {
+  border-top: 1px groove rgba(222, 222, 222, 0.3);
+  margin-left: 0px !important;
+  padding-top: 20px;
+}
+
+.container .card-deck .card {
+  border: none;
+  margin-left: 0px !important;
+}
+
+.container .card-deck .card .card-body {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.container .card-deck .card .card-body .card-title {
+  font-size: 13px;
+}
+
+.container .card-deck .card .card-body .card-text {
+  list-style: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  line-height: 1.46154;
+  position: relative;
+}
+
+.container .card-deck .card .card-body ul.card-text {
+  padding-left: 0;
+}
+
+.container .card-deck .card .card-body ul.card-text li:hover a {
+  color: #111;
+}
+
+.container .card-deck .card .card-body ul.card-text li {
+  position: relative;
+}
+
+.container .card-deck .card .card-body ul.card-text li a {
+  color: #111;
+  text-decoration: none;
+}
+
+.card-text li a::before {
+  content: '';
+  transition: 1s;
+  height: 1px;
+  width: 0px;
+  background: #ff6f61;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-text li a:hover::before {
+  width: 20%;
+}

@@ -1,0 +1,25 @@
+.container h2 {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.container .item {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+}
+
+.container .item h5 {
+  padding-top: 20px;
+}
+
+.container .item-product {
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .item-product:hover .img-product {
+  transform: scale(1.04);
+  transition: 0.5s;
+}

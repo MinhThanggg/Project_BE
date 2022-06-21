@@ -1,0 +1,44 @@
+.container .content {
+  width: 100%;
+  height: 270px;
+}
+
+.container .content .item {
+  padding-right: 0;
+  text-align: left !important;
+  text-decoration: underline;
+  color: #000;
+}
+
+.container .content .item .item-product {
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .content .item .item-product .img-product {
+  width: 100%;
+  height: 100%;
+}
+
+.container .content .item .item-product:hover .img-product {
+  transform: scale(1.04);
+  transition: 0.9s;
+}
+
+.container .content .item .item-product:hover .icon-next {
+  transform: translateX(4px);
+  transition: 0.9s;
+}
+
+.container .content .item .item-product .description {
+  padding-top: 10px;
+  position: absolute;
+  top: 8px;
+  left: 35px;
+}
+
+.container .content .item .item-product .description h4 {
+  font-weight: 500;
+  line-height: 38px;
+}

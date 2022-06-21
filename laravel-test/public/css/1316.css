@@ -1,0 +1,41 @@
+.container.container-1316 {
+  padding-top: 0px !important;
+}
+.link-1316 {
+  display: inline;
+  height: 22px;
+  margin-left: 42px;
+}
+
+
+.link {
+  display: inline;
+}
+
+a.a-1316 {
+  display: inline-block;
+  outline: none;
+  transition: 0.5s;
+  text-decoration: none;
+  color: #909090;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 19px 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+a.a-1316  {
+  color: #909090;
+  cursor: pointer;
+}
+
+a.a-1316 :hover {
+  color: #111111;
+}
+
+span.icon-link {
+  color: #909090;
+}
+.tille-1316 h3{
+  text-align: center;
+}
