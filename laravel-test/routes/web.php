@@ -36,6 +36,8 @@ Route::get('/admin_layout', function () {
 });
 
 Route::get('/danh-muc-san-pham/{category_id}', [CategoryController::class, 'show_category_home']);
+Route::get('/chi-tiet-san-pham/{product_id}', [ProductController::class, 'detail_product']);
+
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/order', [AdminController::class, 'index']);
 Route::get('/list_order', [AdminController::class, 'list']);

@@ -95,4 +95,9 @@ class ProductController extends Controller
         Session::put('message', 'Xoá sản phẩm thành công');
         return Redirect::to('all_product');
     }
+
+    public function detail_product()
+    {
+        return view('products.product_detail');
+    }
 }

@@ -32,7 +32,7 @@ class CategoryController extends Controller
 
         DB::table('tbl_category_product')->insert($data);
         Session::put('message', 'thêm danh mục thành công');
-        return Redirect::to('add_category_product');
+        return Redirect::to('all_category_product');
     }
 
     public function edit_category_product($category_product_id)
