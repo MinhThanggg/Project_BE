@@ -6,7 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
-
+use App\Http\Controllers\HomeController;
 use Psy\Command\ShowCommand;
 
 /*
@@ -20,13 +20,9 @@ use Psy\Command\ShowCommand;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('', [HomeController::class, 'index']);
 
-Route::get('/home', function () {
-    return view('home');
-});
+
 
 Route::get('/store', function () {
     return view('store');
@@ -39,11 +35,13 @@ Route::get('/admin_layout', function () {
     return view('admin_layout');
 });
 
+Route::get('/danh-muc-san-pham/{category_id}', [CategoryController::class, 'show_category_home']);
+Route::get('/home', [HomeController::class, 'index']);
 Route::get('/order', [AdminController::class, 'index']);
 Route::get('/list_order', [AdminController::class, 'list']);
 Route::get('/order', [AdminController::class, 'getAllOrder']);
 Route::get('/list_order', [AdminController::class, 'getAllOrderList']);
-Route::get('/', [AdminController::class, 'list']);
+
 
 Route::get('/add_order', [OrderController::class, 'index']);
 Route::get('/add_order', [OrderController::class, 'getProductOnInsert']);

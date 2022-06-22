@@ -22,12 +22,9 @@
                             STORE
                         </a>
                         <ul class="dropdown-menu itm" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="store">Shop layout</a></li>
-                            <li><a class="dropdown-item" href="#">Product type</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Product cart</a></li>
+                            @foreach ($cate_product as $key => $cate)
+                            <li><a class="dropdown-item" href="{{ URL::to('danh-muc-san-pham/'.$cate->category_id) }}">{{$cate->category_name}}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li class="nav-item dropdown li-menu">

@@ -60,4 +60,14 @@ class CategoryController extends Controller
         Session::put('message', 'Xoá danh mục thành công');
         return Redirect::to('all_category_product');
     }
+
+    // Function home page
+    public function show_category_home($category_id)
+    {
+        $cate_product = DB::table('tbl_category_product')->orderBy('category_id')->get();
+        $category_by_id = DB::table('tbl_product')
+        ->join('tbl_category_product','tbl_product.category_id','=','tbl_category_product.category_id')
+        ->where('tbl_product.category_id', $category_id)->get();
+        return view('category.show_category')->with('cate_product', $cate_product)->with('category_by_id', $category_by_id);
+    }
 }

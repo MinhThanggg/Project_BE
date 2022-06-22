@@ -1,56 +1,122 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.container-1511 {
-    padding-top: 0px !important;
-}
-
-body {
-    font-size: 14px;
-    line-height: 1.15;
-}
-
-#wrapper {
-    max-width: 1330px;
-    margin: 0 auto;
-}
-
-ul.products {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-ul.products li {
-    flex-basis: 25%;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-}
-
-ul.products li img {
-    max-width: 100%;
-    height: auto;
-}
-ul.products li .product-top {
+.container h2 {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .container .content {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container .content .item {
+    text-decoration: none;
     position: relative;
+    text-align: center;
+    color: #000;
+  }
+  .container .content:hover .Add-to-cart {
+    bottom: 0;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .container .content .item h5 {
+    padding-top: 20px;
+  }
+  
+  .container .content .item-product {
+    margin-top: 10px;
     overflow: hidden;
-}
-ul.products li .product-top .product-thumb {
+    position: relative;
+    background-size: 100%;
+    height: 295px;
+  }
+  
+  
+  
+  /* .container .content .product1 {
+    background-image: url("../images/anh1.png");
+  }
+  
+  .container .content .product2 {
+    background-image: url("../images/anh2.png");
+  } */
+  /* 
+  .container .content .product2:hover {
+    background-image: url("../images/anh2(1).png");
+  }
+  
+  .container .content .product3 {
+    background-image: url("../images/anh3.png");
+  }
+  
+  .container .content .product3:hover {
+    background-image: url("../images/anh3(1).png");
+  }
+  
+  .container .content .product4 {
+    background-image: url("../images/anh4.png");
+  }
+  
+  .container .content .product4:hover {
+    background-image: url("../images/anh4(1).png");
+  }
+  
+  .container .content .product5 {
+    background-image: url("../images/anh5.png");
+  }
+  
+  .container .content .product5:hover {
+    background-image: url("../images/anh5(1).png");
+  }
+  
+  .container .content .product6 {
+    background-image: url("../images/anh6.png");
+  }
+  
+  .container .content .product6:hover {
+    background-image: url("../images/anh6(1).png");
+  }
+  
+  .container .content .product7 {
+    background-image: url("../images/anh7.png");
+  }
+  
+  .container .content .product7:hover {
+    background-image: url("../images/anh7(1).png");
+  }
+  
+  .container .content .product8 {
+    background-image: url("../images/anh8.png");
+  } */
+  
+  .product-info {
+    padding: 15px 0px;
+   
+  }
+  .product-info a {
     display: block;
-}
-ul.products li:hover .product-top .product-thumb img {
-filter: opacity(80%);
-}
-ul.products li .product-top .product-thumb img {
-    display: block;
-
-}
-ul.products li .product-top a.Add-to-cart {
+    text-decoration: none;
+  }
+  .product-info a.product-cat {
+    font-size: 16px;
+    padding: 3px 0px;
+    text-align: center;
+    color: black;
+  }
+  .product-info a.product-name {
+    color: black;
+    padding: 3px 0px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .product-info  .product-price {
+    color: #767676;
+    padding: 2px 0px;
+    text-align: center;
+  }
+  
+  .Add-to-cart {
     text-decoration: none;
     text-align: center;
     display: block;
@@ -58,34 +124,13 @@ ul.products li .product-top a.Add-to-cart {
     color: #fff;
     padding: 10px 0px;
     position: absolute;
-    bottom: -36px;
+    bottom: -50px;
     width: 100%;
     transition: 0.25s ease-in-out;
     
-}
-ul.products li :hover a.Add-to-cart {
-    bottom: 0px;
-}
-ul.products li .product-info {
-    padding: 15px 0px;
-}
-
-ul.products li .product-info a {
-    display: block;
-    text-decoration: none;
-}
-
-ul.products li .product-info a.product-cat {
-    font-size: 16px;
-    padding: 3px 0px;
-    color: black;
-}
-ul.products li .product-info a.product-name {
-    color: black;
-    padding: 3px 0px;
-    font-weight: 600;
-}
-ul.products li .product-info a.product-price {
-    color: #767676;
-    padding: 2px 0px;
-}
+  }
+  .img-product{
+    width: 100%;
+    height: 100%;
+  }
+  

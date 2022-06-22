@@ -1,69 +1,24 @@
 <div class="container">
-        <h2>New Arrivals</h2>
+        <h2>Sản Phẩm</h2>
         <div class="row">
+            @foreach ($all_product as $key => $pro)
             <div class="col-md-3 content">
                 <a href="#" class="item">
-                    <div class="item-product product1">                        
+                    <div class="item-product product1">     
+                        <img class="img-product" src="{{ URL::to('upload/product/' . $pro->product_image) }}">
+                        <a href="#" class="Add-to-cart">Add to Cart</a>                   
                     </div>
-                    <h5>Chairs</h5>
+                    
+                    <div class="product-info">
+                        
+                        <a href="" class="product-name">{{$pro->product_name}}</a>
+                        <p class="product-price">{{$pro->product_price}}</p>
+                    </div>
                 </a>
             </div>
-            <div class="col-md-3 content">
-                <a href="#" class="item">
-                    <div class="item-product product2">
-                                              
-                    </div>
-                    <h5>Tables</h5>
-                </a>
-            </div>
-            <div class="col-md-3 content">
-                <a href="#" class="item">
-                    <div class="item-product product3">
-                                       
-                    </div>
-                    <h5>Beds</h5>
-                </a>
-            </div>
-            <div class="col-md-3 content">
-                <a href="#" class="item">
-                    <div class="item-product product4">
-                                              
-                    </div>
-                    <h5>Lightings</h5>
-                </a>
-            </div>
+            @endforeach
+            
+           
         </div>
-        <div class="row">
-            <div class="col-md-3 content">
-                <a href="#" class="item">
-                    <div class="item-product product5">                        
-                    </div>
-                    <h5>Chairs</h5>
-                </a>
-            </div>
-            <div class="col-md-3 content">
-                <a href="#" class="item">
-                    <div class="item-product product6">
-                                              
-                    </div>
-                    <h5>Tables</h5>
-                </a>
-            </div>
-            <div class="col-md-3 content">
-                <a href="#" class="item">
-                    <div class="item-product product7">
-                                       
-                    </div>
-                    <h5>Beds</h5>
-                </a>
-            </div>
-            <div class="col-md-3 content">
-                <a href="#" class="item">
-                    <div class="item-product product8">
-                                              
-                    </div>
-                    <h5>Lightings</h5>
-                </a>
-            </div>
-        </div>
+       
     </div>
