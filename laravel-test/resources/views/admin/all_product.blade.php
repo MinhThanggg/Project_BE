@@ -62,7 +62,7 @@
                                 <td>
                                     <a href="{{ URL::to('edit-product/'.$pro->product_id) }}" class="active" ui-toggle-class="">
                                         <i class="fa fa-pencil-square-o text-success text-active"></i></a>
-                                    <a onclick="return confirm('Bạn có muốn xoá danh mục này không?')" href="{{ URL::to('delete-product/'.$pro->product_id) }}" class="active" ui-toggle-class="">
+                                    <a onclick="return confirm('Bạn có muốn xoá sản phẩm này không?')" href="{{ URL::to('delete-product/'.$pro->product_id) }}" class="active" ui-toggle-class="">
                                         <i class="fa fa-times text-danger text"></i></a>
                                 </td>
                             </tr>

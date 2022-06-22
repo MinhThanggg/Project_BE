@@ -5,7 +5,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item dropdown li-menu">
-                        <a class="dropdown-toggle active a-first" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        <a class="dropdown-toggle active a-first" aria-current="page" href="home" id="navbarDropdown" role="button" aria-expanded="true">
                             HOME
                         </a>
                         <ul class="dropdown-menu itm" aria-labelledby="navbarDropdown">
@@ -18,7 +18,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown li-menu">
-                        <a class="dropdown-toggle a-first" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="dropdown-toggle a-first" href="store" id="navbarDropdown" role="button"  aria-expanded="false">
                             STORE
                         </a>
                         <ul class="dropdown-menu itm" aria-labelledby="navbarDropdown">
@@ -31,7 +31,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown li-menu">
-                        <a class="dropdown-toggle a-first" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="dropdown-toggle a-first" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                             BLOG
                         </a>
                         <ul class="dropdown-menu itm" aria-labelledby="navbarDropdown">
@@ -44,7 +44,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown li-menu">
-                        <a class="dropdown-toggle a-first" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="dropdown-toggle a-first" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                             CONTACT
                         </a>
                         <ul class="dropdown-menu itm" aria-labelledby="navbarDropdown">

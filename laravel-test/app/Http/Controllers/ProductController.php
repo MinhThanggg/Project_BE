@@ -35,7 +35,7 @@ class ProductController extends Controller
         $data['product_name'] = $request->product_name;
         $data['product_desc'] = $request->product_desc;
         $data['product_content'] = $request->product_content;
-        $data['product_price'] = $request->product_desc;
+        $data['product_price'] = $request->product_price;
         $get_image = $request->file('product_image');
         if ($get_image) {
             $get_name_image = $get_image->getClientOriginalName();
@@ -45,12 +45,12 @@ class ProductController extends Controller
             $data['product_image'] = $new_image;
             DB::table('tbl_product')->insert($data);
             Session::put('message', 'thêm sản phẩm thành công');
-            return Redirect::to('add_product');
+            return Redirect::to('all_product');
         }
         $data['product_image'] = '';
         DB::table('tbl_product')->insert($data);
         Session::put('message', 'thêm sản phẩm thành công');
-        return Redirect::to('add_product');
+        return Redirect::to('all_product');
     }
 
     public function edit_product($product_id)
@@ -69,17 +69,30 @@ class ProductController extends Controller
         $data['product_name'] = $request->product_name;
         $data['product_desc'] = $request->product_desc;
         $data['product_content'] = $request->product_content;
-        $data['product_price'] = $request->product_desc;
+        $data['product_price'] = $request->product_price;
+        $get_image = $request->file('product_image');
+        if ($get_image) {
+            $get_name_image = $get_image->getClientOriginalName();
+            $name_image = current(explode('.', $get_name_image));
+            $new_image = $name_image.rand(0, 99) . '.' . $get_image->getClientOriginalExtension();
+            $get_image->move('upload/product', $new_image);
+            $data['product_image'] = $new_image;
+            DB::table('tbl_product')->where('product_id', $product_id)->update($data);
+            Session::put('message', 'thêm sản phẩm thành công');
+            return Redirect::to('all_product');
+        }
         DB::table('tbl_product')->where('product_id', $product_id)->update($data);
-        Session::put('message', 'Sửa sản phẩm thành công');
+        Session::put('message', 'thêm sản phẩm thành công');
         return Redirect::to('all_product');
+
+        
     }
 
-    public function delete_category_product($category_product_id)
+    public function delete_product($product_id)
     {
 
-        DB::table('tbl_category_product')->where('category_id', $category_product_id)->delete();
-        Session::put('message', 'Xoá danh mục thành công');
-        return Redirect::to('all_category_product');
+        DB::table('tbl_product')->where('product_id', $product_id)->delete();
+        Session::put('message', 'Xoá sản phẩm thành công');
+        return Redirect::to('all_product');
     }
 }
